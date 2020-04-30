@@ -1,1 +1,282 @@
-a
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>portfolio</title>
+ <style type="text/css">
+   body {
+       overflow: hidden;
+   }
+   #menu {
+       position: absolute;
+       top: -40px;
+       height: 50px;
+       width: 100%;
+       transition: 0.5s;
+       cursor: pointer;
+
+   }
+
+   #menu.menu-open
+   {
+       top: 0;
+   }
+
+   #menu ul {
+       position: relative;
+       display: flex;
+       overflow: hidden;
+       margin: 0 auto;
+       width: 100%;
+       text-align: center;
+   }
+
+   #menu li {
+       display: inline-block;
+       position: relative;
+       list-style: none;
+       width: 20%;
+       text-align: center;
+       background-color: pink;
+       opacity: 0.7;
+       height: 50px;
+       line-height: 50px;
+       margin-right: 2px;
+       left: 35%;
+
+   }
+
+   #menu li a {
+       text-decoration: none;
+       color: black;
+       font-family: "American Typewriter";
+       padding: 20px;
+   }
+    
+   div.container {
+       overflow: auto;
+       scroll-snap-type: y mandatory;
+       height: 100vh;
+       transition: 1s;
+   }
+   div.container::-webkit-scrollbar {
+       display: none;
+   }
+   section.home {
+       margin: 0em;
+       background-image: url("img/flower1.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       scroll-snap-align: start;
+       height: 100vh;
+       width: 100%;
+       transition: .8s;
+   }
+
+   .myname {
+       position: relative;
+       font-size: 66pt;
+       font-family: "Bradley Hand";
+       margin-left: auto;
+       margin-right: auto;
+       top: 45%;
+       text-align: center;
+   }
+
+   section.about {
+       background-image: url(img/bara.png);
+       background-position: left bottom;
+       background-size: 30%;
+       background-color: white;
+       background-repeat: no-repeat;
+       scroll-snap-align: start;
+       height: 100vh;
+       width: 100%;
+   }
+   .about h1 {
+       position: relative;
+       top: 100px;
+       left: 20px;
+       font-size: 44pt;
+       font-family: "American Typewriter";
+   }
+   
+   .myabout {
+       position: relative;
+       height: 100%;
+       width: 100%;
+   }
+   .myabout p {
+       position: relative;
+       top: 35%;
+       left: 55%;
+       -webkit-transform: translate(-50%,-50%);
+       transform: translate(-50%,-50%);
+       width: 50%;
+       font-family: "遊ゴシック体";
+       font-size: 20pt;
+   }
+   section.contact {
+       background-image: url("img/flower2.png");
+       background-size: cover;
+       background-repeat: no-repeat;
+       scroll-snap-align: start;
+       height: 100vh;
+       width: 100%;
+       transition: .8s;
+   }
+   .contact h1 {
+       position: relative;
+       top: 100px;
+       left: 20px;
+       font-size: 44pt;
+       font-family: "American Typewriter";
+   }
+   #name {
+       position: relative;
+       height: 40px;
+       width: 600px;
+       top: 100px;
+       left: 30px;
+       font-family: "Apple Chancery";
+       font-size: 18pt;
+   }
+   #mail {
+       position: relative;
+       height: 40px;
+       width: 600px;
+       top: 130px;
+       left: 30px;
+       font-family: "Apple Chancery";
+       font-size: 18pt;
+   }
+
+   #comment {
+       position: relative;
+       height: 100px;
+       width: 600px;
+       top: 150px;
+       left: 30px;
+       font-family: "Apple Chancery";
+       font-size: 18pt;
+   }
+
+   #submit {
+       position: relative;
+       height: 40px;
+       width: 500px;
+       top: 170px;
+       left: 80px;
+       font-family: "Apple Chancery";
+       background-color: cadetblue;
+       font-size: 18pt;
+   }
+
+   #twitter img {
+       height: 110px;
+       width: 110px;
+       position: relative;
+   }
+
+   #twitter {
+       height: 110px;
+       width: 110px;
+       bottom: -100px;
+       left: 700px;
+       position: relative;
+
+   }
+
+   #insta img {
+       height: 100px;
+       width: 100px;
+       position: relative;
+   }
+   #insta {
+       height: 100px;
+       width: 100px;
+       bottom: 0;
+       left: 820px;
+       position: relative;
+
+   
+   
+ </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="menu1" id="menu">
+    <ul>
+         <li><a href="#jamp1">HOME</a></li>
+         <li><a href="#jamp2">ABOUT</a></li>
+         <li><a href="#jamp3">CONTACT</a></li>
+    </ul>
+    </div>
+    
+    <section class="home" id="jamp1">
+        <div class="myname">Momoka Tsuru</div>
+    </section>
+     
+    <section class="about" id="jamp2">
+        <h1>ABOUT</h1>
+        <div class="myabout">
+        <p>名前：鶴 萌々香　Tsuru Momoka<br><br>生年月日：1998/01/15<br><br>趣味：映画鑑賞、動画制作、スノーボード<br><br>資格：実用英語技能検定２級<br><br>　　　ITパスポート（勉強中）</p>
+        </div>
+    </section>
+
+    <section class="contact" id="jamp3">
+        <h1>CONTACT</h1>
+        
+        <form>
+        
+        <input id="name" type="text" placeholder=" Your name">
+        
+        <br> <br> 
+
+        <input id="mail" type="email" placeholder=" e-mail address">
+
+        <br> <br> 
+
+        <textarea id="comment" placeholder=" Inquiry Contents"></textarea>
+
+        <br> <br> 
+
+        <input id= "submit" type="submit" value="submit">
+
+        <div id="twitter">
+            <a href="https://twitter.com/">
+                <img src="img/twitter.png">
+            </a>
+        </div>
+
+        <div id="insta">
+            <a href="https://instagram.com/">
+                <img src="img/insta.png">
+            </a>
+        </div>
+        
+    
+        </form>
+
+        <script>
+            'use strict';
+    
+            const menu = document.getElementById('menu');
+    
+            menu.addEventListener('mouseover', () => {
+                menu.className = 'menu-open';
+            });
+            
+            menu.addEventListener('mouseleave', () => {
+                menu.className = '';
+            });
+        </script>
+
+    </section>
+</div>
+
+</body>
+</html>
